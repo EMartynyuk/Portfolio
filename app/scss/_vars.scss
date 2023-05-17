@@ -1,0 +1,55 @@
+$colormain: #ffffff;
+$colorsecond: #676767;
+$colorthird: #BCBCBC;
+
+%square {
+  background: linear-gradient(
+        90deg,
+        rgba(30, 30, 30, 1) 0%,
+        rgba(20, 20, 20, 1) 100%
+      )
+      padding-box,
+    linear-gradient(90deg, rgba(36, 36, 36, 1) 0%, rgba(21, 21, 21, 1) 100%)
+      border-box;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+
+%pos {
+  font-size: 14px;
+  line-height: 16.8px;
+}
+%name {
+  font-size: 36px;
+  line-height: 40px;
+}
+%descr {
+  font-size: 14px;
+  line-height: 19.2px;
+}
+
+%nav {
+  font-size: 16px;
+  line-height: 19.2px;
+}
+%navbottom {
+  font-size: 12px;
+  line-height: 19.2px;
+}
+
+%title {
+  font-size: 20px;
+  line-height: 24px;
+}
+%subtitle {
+  font-size: 12px;
+  line-height: 14.4px;
+  text-transform: uppercase;
+  color: $colorsecond;
+  margin-bottom: 8px;
+}
+
+%big {
+  font-size: 44px;
+  line-height: 52px;
+}

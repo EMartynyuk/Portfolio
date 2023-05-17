@@ -1,0 +1,75 @@
+/*Обнуление*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 10px;
+    scroll-behavior: smooth; /* Плавный переход к якорям */
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; 
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  :focus,
+  :active {
+    outline: none;
+    
+  }
+  
+  a:focus, 
+  a:active {
+    outline: none; 
+  }
+  
+  input,
+  button,
+  textarea,
+  select {
+    font-family: inherit;
+    background-color: transparent;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  ul li,
+  ol li {
+    list-style: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit; 
+  }
+  
+  img {
+    max-width: 100%;
+    display: block
+  }
+  
+  body {
+    min-height: 100vh
+  }

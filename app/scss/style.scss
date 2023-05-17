@@ -1,0 +1,284 @@
+@import "vars"; /* Переменные из SCSS*/
+@import "fonts"; /* Шрифты */
+@import "reset"; /* Обнуление CSS*/
+@import "libs"; /*Загрузка сторонних плагинов*/
+@import "global"; /* Глобальные стили*/
+
+/* Ниже пишется основа*/
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 60px;
+  }
+  &__logo {
+    max-height: 80px;
+  }
+
+  &__lists {
+    display: flex;
+    @extend %nav;
+  }
+
+  &__item {
+    color: $colorsecond;
+    & + & {
+      margin-left: 50px;
+    }
+    &--active {
+      color: $colormain;
+    }
+  }
+
+  &__item-link {
+    color: inherit;
+  }
+
+  &__talk {
+    color: inherit;
+    @extend %nav;
+  }
+}
+/* FOOTER---------------------------------------------------------------------------*/
+.footer {
+  &__logo {
+    margin: 0 auto;
+    max-height: 80px;
+  }
+
+  &__lists {
+    display: flex;
+    justify-content: center;
+    @extend %nav;
+    color: $colorsecond;
+  }
+
+  &__item {
+    & + & {
+      margin-left: 45px;
+    }
+  }
+
+  &__item-link {
+    color: inherit;
+  }
+}
+/* SQUARE---------------------------------------------------------------------------*/
+.square {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 317px 240px 240px;
+    gap: 28px 24px;
+  }
+
+  &__item:not(.block) {
+    @extend %square;
+    padding: 25px 23px;
+  }
+}
+
+.bio {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  display: flex;
+  &__img {
+    margin-right: 38px;
+    border-radius: 33px 0 33px 0;
+  }
+
+  &__content {
+    margin: 25px 0 55px;
+    max-width: 210px;
+  }
+
+  &__position {
+    @extend %pos;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    @extend %name;
+    margin-bottom: 20px;
+  }
+
+  &__descr {
+    @extend %descr;
+  }
+}
+
+.block {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  gap: 24px;
+  &__item {
+    padding: 15px 23px;
+  }
+}
+
+.slider {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  @extend %square;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  &__item {
+    @extend %navbottom;
+    white-space: nowrap;
+  }
+}
+.about {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  @extend %square;
+  display: flex;
+  flex-direction: column;
+  &__img {
+    max-height: 124px;
+  }
+  .name {
+    margin-top: auto;
+  }
+}
+.works {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  @extend %square;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &__text {
+    position: absolute;
+    top: 12px;
+    left: 45px;
+    font-size: 32px;
+    color: $colorsecond;
+    text-transform: uppercase;
+    z-index: 0;
+  }
+
+  &__img {
+    width: 185px;
+    margin: 0 auto;
+    filter: grayscale(0.5);
+  }
+  .name {
+    margin-top: auto;
+  }
+}
+
+.spec {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    filter: grayscale(1);
+    margin-top: 40px;
+  }
+
+  &__item {
+    width: 48px;
+    height: 48px;
+    path {
+      fill: white;
+    }
+  }
+}
+.profile {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__items {
+    width: 224px;
+    height: 124px;
+    @extend %square;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__item {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(
+      90deg,
+      rgba(32, 32, 32, 1) 0%,
+      rgba(32, 32, 32, 1) 100%
+    );
+    border: 1px solid #2a2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    path {
+      fill: white;
+    }
+    &:hover {
+      background: white;
+      path {
+        fill: black;
+      }
+    }
+  }
+
+  &__img {
+  }
+}
+.numbers {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  @extend %navbottom;
+  display: flex;
+  justify-content: space-around;
+  &__item {
+    color: $colorthird;
+    width: 155px;
+    height: 180px;
+    @extend %square;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid $colorsecond
+  }
+
+  &__item-num {
+    font-size: 34px;
+    line-height: 40.8px;
+    color: white;
+    margin-bottom: 35px;
+    
+  }
+
+  &__item-descr {
+    @extend %navbottom
+  }
+}
+.cooperation {
+  grid-column: 3/5;
+  grid-row: 3/4;
+  @extend %big;
+  display: flex;
+  align-items: flex-end;
+  &__title {
+    &-span {
+        color: #5B78F6
+    }
+  }
+}
+
+@import "media"; /* Медиа запросы*/
