@@ -1,31 +1,43 @@
 body {
-    font-family: 'Inter', sans-serif;
-    color: $colormain;
+  font-family: "Inter", sans-serif;
+  color: $colormain;
 
-    background-color: #0F0F0F;
+  background-color: #0f0f0f;
 
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 5px;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 .main {
-    flex: 1
+  flex: 1;
 }
 
 .name {
-
-    &__title {
-        @extend %title;
-    }
-    &__subtitle {
-        @extend %subtitle;
-      
-    }
+  &__title {
+    @extend %title;
   }
+  &__subtitle {
+    @extend %subtitle;
+    margin-top: 15px;
+  }
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  z-index: 5;
+  &:hover {
+    box-shadow: 0 1px 1px $colormain;
+  }
+}
