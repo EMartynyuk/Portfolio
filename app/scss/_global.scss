@@ -57,9 +57,6 @@ body {
     line-height: 48px;
     color: $colormain;
     display: none;
-    // @media (max-width: 943px) {
-    //   left: 30%;
-    // }
   }
   &:hover {
     box-shadow: 0 1px 1px $colormain;
@@ -69,13 +66,3 @@ body {
     }
   }
 }
-
-// .work-left__item {
-//   .overlay-works {
-//     &::before {
-//       @media (max-width: 943px) {
-//         left: 15%;
-//       }
-//     }
-//   }
-// }
