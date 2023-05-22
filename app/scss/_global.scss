@@ -1,9 +1,7 @@
 body {
   font-family: "Inter", sans-serif;
   color: $colormain;
-
   background-color: #0f0f0f;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,3 +39,43 @@ body {
     box-shadow: 0 1px 1px $colormain;
   }
 }
+
+.overlay-works {
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: $transition;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::before {
+    content: "Смотреть";
+    font-size: 40px;
+    line-height: 48px;
+    color: $colormain;
+    display: none;
+    // @media (max-width: 943px) {
+    //   left: 30%;
+    // }
+  }
+  &:hover {
+    box-shadow: 0 1px 1px $colormain;
+    background-color: rgb(103, 103, 103, 0.8);
+    &::before {
+      display: block;
+    }
+  }
+}
+
+// .work-left__item {
+//   .overlay-works {
+//     &::before {
+//       @media (max-width: 943px) {
+//         left: 15%;
+//       }
+//     }
+//   }
+// }
