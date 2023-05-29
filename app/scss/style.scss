@@ -686,7 +686,10 @@
       color: #5b78f6;
     }
   }
-
+  &__form-label {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   &__input {
     width: 100%;
     height: 55px;
@@ -778,6 +781,7 @@
     }
   }
   &__info-block {
+    text-align: center;
   }
   &__name {
     margin-bottom: 12px;

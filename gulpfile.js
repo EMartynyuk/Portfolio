@@ -39,6 +39,8 @@ function scripts() {
               'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
               'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
               'node_modules/mixitup/dist/mixitup.js',
+              'node_modules/just-validate/dist/just-validate.es.js',
+              'node_modules/inputmask/dist/inputmask.min.js',
               "app/js/main.js"])
     .pipe(concat("main.min.js"))
     .pipe(uglify())

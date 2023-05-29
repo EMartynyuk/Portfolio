@@ -60,7 +60,7 @@ body {
   }
   &:hover {
     box-shadow: 0 1px 1px $colormain;
-    background-color: rgb(103, 103, 103, 0.8);
+    background-color: rgb(103, 103, 103, 0.6);
     &::before {
       display: block;
     }
