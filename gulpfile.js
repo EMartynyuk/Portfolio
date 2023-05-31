@@ -2,20 +2,11 @@ const { src, dest, watch, parallel, series } = require("gulp");
 
 const scss = require("gulp-sass")(require("sass"));
 const concat = require("gulp-concat");
-const autoprefixer = require("gulp-autoprefixer");
 const uglify = require("gulp-uglify");
-const imagemin = require("gulp-imagemin");
-const del = require("del");
 const browserSync = require("browser-sync").create();
-
-function browsersync() {
-  browserSync.init({
-    server: {
-      baseDir: "app/",
-    },
-    notify: false,
-  });
-}
+const autoprefixer = require("gulp-autoprefixer");
+const del = require("del");
+const imagemin = require("gulp-imagemin");
 
 function styles() {
   return src("app/scss/style.scss")
@@ -39,7 +30,7 @@ function scripts() {
               'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
               'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
               'node_modules/mixitup/dist/mixitup.js',
-              'node_modules/just-validate/dist/just-validate.es.js',
+              'node_modules/just-validate/dist/just-validate.production.min.js',
               'node_modules/inputmask/dist/inputmask.min.js',
               "app/js/main.js"])
     .pipe(concat("main.min.js"))
@@ -74,6 +65,12 @@ function cleanDist() {
 }
 
 function watching() {
+  browserSync.init({
+    server: {
+      baseDir: "app/",
+    },
+    notify: false,
+  });
   watch(["app/scss/**/*.scss"], styles);
   watch(["app/js/**/*.js", "!app/js/main.min.js"], scripts);
   watch(["app/**/*.html"]).on("change", browserSync.reload);
@@ -81,10 +78,9 @@ function watching() {
 
 exports.styles = styles;
 exports.scripts = scripts;
-exports.browsersync = browsersync;
 exports.watching = watching;
 
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, scripts, watching);
 
 exports.cleanDist = cleanDist;
 exports.images = images;
