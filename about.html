@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="resources/logo.ico" type="image/x-icon">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/main.min.js"></script>
+  </head>
+
+<body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a class="header__logo-link" href="index.html">
+              <picture class="header__logo-pic">
+                <source srcset="images/logo.avif" type="image/avif">
+                <source srcset="images/logo.webp" type="image/webp">
+                <img class="header__logo" src="images/logo.png" alt="Лого">
+              </picture>
+            </a>
+          </div>
+            <ul class="header__lists">
+              <li class="header__item ">
+                  <a class="header__item-link" href="index.html">Главная</a>
+              </li>
+              <li class="header__item">
+                  <a class="header__item-link" href="portfolio.html">Работы</a>
+              </li>
+              <li class="header__item header__item--active">
+                  <a class="header__item-link" href="about.html">Обо мне</a>
+              </li>
+              <li class="header__item">
+                  <a class="header__item-link" href="contact.html">Контакты</a>
+              </li>
+          </ul>
+          <button class="header__talk btn-reset modal-btn" data-graph-path="header">Связаться</button>
+          <button class="header__btn">
+            <span class="header__btn-line"></span>
+            <span class="header__btn-line"></span>
+            <span class="header__btn-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+        <section class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__info" data-aos="zoom-in">
+                        <img class="about__photo" src="images/about-img.png" alt="Мое фото">
+                        <div class="about__info-block">
+                            <p class="about__name">Евгений Мартынюк</p>
+                            <p class="about__social">@martynyuk21</p>
+                            <div class="about__items">
+                                <div class="about__item">
+                                    <a class="about__item-link" href="https://t.me/martynyuk21" target="_blank">
+                                        <svg class="about__item-img">
+                                            <use xlink:href="images/sprite.svg#telegram"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="about__item">
+                                    <a class="about__item-link"
+                                        href="https://instagram.com/e.martynyuk21?igshid=NTc4MTIwNjQ2YQ=="
+                                        target="_blank">
+                                        <svg class="about__item-img">
+                                            <use xlink:href="images/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="about__item">
+                                    <a class="about__item-link" href="https://github.com/EMartynyuk" target="_blank">
+                                        <svg class="about__item-img">
+                                            <use xlink:href="images/sprite.svg#github"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="about__item">
+                                    <a class="about__item-link" href="mailto:martynyukei21@gmail.com" target="_blank">
+                                        <svg class="about__item-img">
+                                            <use xlink:href="images/sprite.svg#mail"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="about__button">
+                                <a class="about__btn" href="contact.html">Связаться со мной</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="about__content">
+                        <div class="about__content-item" data-aos="zoom-in">
+                            <h3 class="about__content-title">ОБО МНЕ</h3>
+                            <p class="about__content-text">Я Frontend разработчик. Это если по-умному.
+                                А если перевести на человеческий язык, то я помогу вам создать сайт, который будет
+                                работать как часы.
+                            </p>
+                            <p class="about__content-text">В 2022 году нашел себя в данной сфере, и теперь для меня
+                                создание сайтов — это больше, чем просто работа.</p>
+                            <p class="about__content-text">Три интересных факта обо мне:</p>
+                            <ul class="about__content-lists">
+                                <li class="about__content-list-item">По образованию экономист, поэтому сэкономлю ваше
+                                    время.</li>
+                                <li class="about__content-list-item">Моей любимой игрой в детстве был тетрис, поэтому
+                                    соберу ваш сайт аккуратно, пиксель в пиксель.</li>
+                                <li class="about__content-list-item">
+                                    Занимался футболом, поэтому знаю, как эффективно взаимодействовать с партнерами по
+                                    команде — с дизайнерами, разработчиками и менеджерами проектов, чтобы создать
+                                    продукт, который собирает стадионы :)
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about__content-item" data-aos="zoom-in">
+                            <h3 class="about__content-title">ОБУЧЕНИЕ</h3>
+                            <ul class="about__content-lists">
+                                <li class="about__content-list-item">Курс «Фронтенд Разработчик» от MDN</li>
+                                <li class="about__content-list-item">Курсы «Responsive Web Design» и «JavaScript
+                                    Algorithms and Data Structures» от freeCodeCamp </li>
+                                <li class="about__content-list-item">Курс «Создание сайтов — От 0 до 1» от Вадима
+                                    Прокопчука</li>
+                                <li class="about__content-list-item">Курс по верстке от Фрилансера по жизни
+                                </li>
+                            </ul>
+                            <p class="about__content-text">И продолжаю повышать свои навыки в разработке.</p>
+                        </div>
+                        <div class="about__content-item" data-aos="zoom-in">
+                            <h3 class="about__content-title">ЧЕМ Я МОГУ БЫТЬ ПОЛЕЗЕН</h3>
+                            <p class="about__content-text">Я — фронтенд разработчик, и моя задача создавать красивые и
+                                функциональные веб-сайты. Когда у меня есть дизайн-макеты, я превращаю их в настоящие
+                                сайты, на которых люди могут легко перемещаться и использовать. Я знаю такие языки, как
+                                HTML, CSS и JavaScript — с их помощью я делаю сайты интерактивными и доступными. </p>
+                            <p class="about__content-text">Моя цель — сделать сайты удобными и функциональными, чтобы люди с
+                                удовольствием пользовались ими. Если у вас есть идеи, я готов помочь вам воплотить их в
+                                жизнь и создать сайт, который лучше всего отразит вашу компанию или проект в интернете.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer__logo">
+
+                <a class="footer__logo-link" href="index.html">
+
+                    <picture class="">
+
+                        <source srcset="images/logo.avif" type="image/avif">
+
+                        <source srcset="images/logo.webp" type="image/webp">
+
+                        <img class="footer__logo-img" src="images/logo.png" alt="Лого">
+
+                    </picture>
+
+                </a>
+
+            </div>
+
+            <ul class="footer__lists">
+
+                <li class="footer__item">
+
+                    <a class="footer__item-link" href="#">Главная</a>
+
+                </li>
+
+                <li class="footer__item">
+
+                    <a class="footer__item-link" href="portfolio.html">Работы</a>
+
+                </li>
+
+                <li class="footer__item">
+
+                    <a class="footer__item-link" href="about.html">Обо мне</a>
+
+                </li>
+
+                <li class="footer__item">
+
+                    <a class="footer__item-link" href="contact.html">Контакты</a>
+
+                </li>
+
+            </ul>
+
+            <div class="graph-modal">
+
+                <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="header">
+
+                    <button class="btn-reset graph-modal__close js-modal-close"
+
+                        aria-label="Закрыть модальное окно"></button>
+
+                    <div class="graph-modal__content">
+
+                        <div class="contact-social">
+
+                            <h3 class="contact-social__title">СОЦИАЛЬНЫЕ СЕТИ</h3>
+
+                            <div class="contact-social__items">
+
+                                <div class="contact-social__item" data-aos="zoom-in">
+
+                                    <a class="contact-social__img-link" href="https://t.me/martynyuk21" target="_blank">
+
+                                        <svg class="contact-social__img">
+
+                                            <use xlink:href="images/sprite.svg#telegram"></use>
+
+                                        </svg>
+
+                                    </a>
+
+                                </div>
+
+                                <div class="contact-social__item" data-aos="zoom-in">
+
+                                    <a class="contact-social__img-link"
+
+                                        href="https://instagram.com/e.martynyuk21?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+
+                                        <svg class="contact-social__img">
+
+                                            <use xlink:href="images/sprite.svg#instagram"></use>
+
+                                        </svg>
+
+                                    </a>
+
+                                </div>
+
+                                <div class="contact-social__item" data-aos="zoom-in">
+
+                                    <a class="contact-social__img-link" href="mailto:martynyukei21@gmail.com"
+
+                                        target="_blank">
+
+                                        <svg class="contact-social__img">
+
+                                            <use xlink:href="images/sprite.svg#mail"></use>
+
+                                        </svg>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

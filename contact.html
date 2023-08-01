@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="resources/logo.ico" type="image/x-icon">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/main.min.js"></script>
+  </head>
+
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a class="header__logo-link" href="index.html">
+          <picture class="header__logo-pic">
+            <source srcset="images/logo.avif" type="image/avif">
+            <source srcset="images/logo.webp" type="image/webp">
+            <img class="header__logo" src="images/logo.png" alt="Лого">
+          </picture>
+        </a>
+      </div>
+        <ul class="header__lists">
+          <li class="header__item ">
+              <a class="header__item-link" href="index.html">Главная</a>
+          </li>
+          <li class="header__item">
+              <a class="header__item-link" href="portfolio.html">Работы</a>
+          </li>
+          <li class="header__item">
+              <a class="header__item-link" href="about.html">Обо мне</a>
+          </li>
+          <li class="header__item header__item--active">
+              <a class="header__item-link" href="contact.html">Контакты</a>
+          </li>
+      </ul>
+      <button class="header__talk btn-reset modal-btn" data-graph-path="header">Связаться</button>
+      <button class="header__btn">
+        <span class="header__btn-line"></span>
+        <span class="header__btn-line"></span>
+        <span class="header__btn-line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+        <section class="contact">
+            <div class="container">
+                <div class="contact__inner">
+
+                    <div class="contact-social">
+                        <h3 class="contact-social__title" data-aos="fade-down">СОЦИАЛЬНЫЕ СЕТИ</h3>
+                        <div class="contact-social__items">
+                            <div class="contact-social__item" data-aos="zoom-in">
+                                <a class="contact-social__img-link" href="https://t.me/martynyuk21" target="_blank">
+                                    <svg class="contact-social__img">
+                                        <use xlink:href="images/sprite.svg#telegram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="contact-social__item" data-aos="zoom-in">
+                                <a class="contact-social__img-link"
+                                    href="https://instagram.com/e.martynyuk21?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+                                    <svg class="contact-social__img">
+                                        <use xlink:href="images/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="contact-social__item" data-aos="zoom-in">
+                                <a class="contact-social__img-link" href="mailto:martynyukei21@gmail.com" target="_blank">
+                                    <svg class="contact-social__img">
+                                        <use xlink:href="images/sprite.svg#mail"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" data-aos="zoom-in">
+
+                        <h2 class="contact-form__title">Давайте работать <span
+                                class="contact-form__title-span">вместе.</span></h2>
+                        <label class="contact-form__label">
+                            <input class="contact-form__input input-name" type="text" placeholder="Ваше имя *" required
+                                name="name" disabled>
+                        </label>
+                        <label class="contact-form__label">
+                            <input class="contact-form__input input-mail" type="email" placeholder="Ваш Email *" required
+                                name="email" disabled>
+                        </label>
+                        <label class="contact-form__label">
+                            <textarea class="contact-form__textarea" placeholder="Ваше сообщение *" required
+                                name="text" disabled></textarea>
+                        </label>
+                        <button class="contact-form__btn" type="submit" disabled>Отправить</button>
+                        <div class="contact-form__overlay">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer__logo">
+
+            <a class="footer__logo-link" href="index.html">
+
+                <picture class="">
+
+                    <source srcset="images/logo.avif" type="image/avif">
+
+                    <source srcset="images/logo.webp" type="image/webp">
+
+                    <img class="footer__logo-img" src="images/logo.png" alt="Лого">
+
+                </picture>
+
+            </a>
+
+        </div>
+
+        <ul class="footer__lists">
+
+            <li class="footer__item">
+
+                <a class="footer__item-link" href="#">Главная</a>
+
+            </li>
+
+            <li class="footer__item">
+
+                <a class="footer__item-link" href="portfolio.html">Работы</a>
+
+            </li>
+
+            <li class="footer__item">
+
+                <a class="footer__item-link" href="about.html">Обо мне</a>
+
+            </li>
+
+            <li class="footer__item">
+
+                <a class="footer__item-link" href="contact.html">Контакты</a>
+
+            </li>
+
+        </ul>
+
+        <div class="graph-modal">
+
+            <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="header">
+
+                <button class="btn-reset graph-modal__close js-modal-close"
+
+                    aria-label="Закрыть модальное окно"></button>
+
+                <div class="graph-modal__content">
+
+                    <div class="contact-social">
+
+                        <h3 class="contact-social__title">СОЦИАЛЬНЫЕ СЕТИ</h3>
+
+                        <div class="contact-social__items">
+
+                            <div class="contact-social__item" data-aos="zoom-in">
+
+                                <a class="contact-social__img-link" href="https://t.me/martynyuk21" target="_blank">
+
+                                    <svg class="contact-social__img">
+
+                                        <use xlink:href="images/sprite.svg#telegram"></use>
+
+                                    </svg>
+
+                                </a>
+
+                            </div>
+
+                            <div class="contact-social__item" data-aos="zoom-in">
+
+                                <a class="contact-social__img-link"
+
+                                    href="https://instagram.com/e.martynyuk21?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+
+                                    <svg class="contact-social__img">
+
+                                        <use xlink:href="images/sprite.svg#instagram"></use>
+
+                                    </svg>
+
+                                </a>
+
+                            </div>
+
+                            <div class="contact-social__item" data-aos="zoom-in">
+
+                                <a class="contact-social__img-link" href="mailto:martynyukei21@gmail.com"
+
+                                    target="_blank">
+
+                                    <svg class="contact-social__img">
+
+                                        <use xlink:href="images/sprite.svg#mail"></use>
+
+                                    </svg>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

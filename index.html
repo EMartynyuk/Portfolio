@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="resources/logo.ico" type="image/x-icon">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/main.min.js"></script>
+  </head>
+
+<body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a class="header__logo-link" href="index.html">
+              <picture class="header__logo-pic">
+                <source srcset="images/logo.avif" type="image/avif">
+                <source srcset="images/logo.webp" type="image/webp">
+                <img class="header__logo" src="images/logo.png" alt="Лого">
+              </picture>
+            </a>
+          </div>
+
+          <ul class="header__lists">
+            <li class="header__item header__item--active">
+              <a class="header__item-link" href="#">Главная</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link" href="portfolio.html">Работы</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link" href="about.html">Обо мне</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link" href="contact.html">Контакты</a>
+            </li>
+          </ul>
+          <button class="header__talk btn-reset modal-btn" data-graph-path="header">Связаться</button>
+          <button class="header__btn">
+            <span class="header__btn-line"></span>
+            <span class="header__btn-line"></span>
+            <span class="header__btn-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+        <section class="square">
+            <div class="container">
+                <div class="square__inner">
+
+                    <div class="square-top">
+
+                        <div class="square-top__block bio" data-aos="zoom-in">
+                            <picture class="bio__pic">
+                                <source srcset="images/bio-img.avif" type="image/avif">
+                                <source srcset="images/bio-img.webp" type="image/webp">
+                                <img class="bio__img" src="images/bio-img.png" alt="Мое фото">
+                            </picture>
+                            <div class="bio__content">
+                                <p class="bio__position">FRONTEND РАЗРАБОТЧИК</p>
+                                <p class="bio__name">Евгений Мартынюк</p>
+                                <p class="bio__descr">Веб разработчик из города на Неве.</p>
+                            </div>
+                        </div>
+
+                        <div class="square-top__block block">
+
+                            <div class="block__top slider" data-aos="zoom-in">
+                                <div class="slider__wrapper">
+                                    <p class="slider__item">СОЗДАМ САЙТ ПО МАКЕТУ, КОТОРЫЙ ВЫДЕЛИТ ВАС <span>СРЕДИ
+                                            КОНКУРЕНТОВ</span> И ПРИВЛЕЧЕТ <span>КЛИЕНТОВ</span></p>
+                                    <p class="slider__item">СОЗДАМ САЙТ ПО
+                                        МАКЕТУ, КОТОРЫЙ ВЫДЕЛИТ ВАС <span>СРЕДИ КОНКУРЕНТОВ</span> И ПРИВЛЕЧЕТ
+                                        <span>КЛИЕНТОВ</span>
+                                    </p>
+                                    <p class="slider__item">СОЗДАМ САЙТ ПО
+                                        МАКЕТУ, КОТОРЫЙ ВЫДЕЛИТ ВАС <span>СРЕДИ КОНКУРЕНТОВ</span> И ПРИВЛЕЧЕТ
+                                        <span>КЛИЕНТОВ</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="block__down">
+
+                                <div class="block__item about-block" data-aos="zoom-in">
+                                    <a class="overlay" href="about.html"></a>
+                                    <picture class="about-block__pic">
+                                        <source srcset="images/about.avif" type="image/avif">
+                                        <source srcset="images/about.webp" type="image/webp">
+                                        <img class="about-block__img" src="images/about.png" alt="Обо мне">
+                                    </picture>
+                                    <div class="name">
+                                        <p class="name__subtitle">Information</p>
+                                        <p class="name__title">Больше обо мне </p>
+                                    </div>
+                                </div>
+
+                                <div class="block__item works" data-aos="zoom-in">
+                                    <a class="overlay" href="portfolio.html"></a>
+                                    <picture class="works__pic">
+                                        <source srcset="images/notebook.avif" type="image/avif">
+                                        <source srcset="images/notebook.webp" type="image/webp">
+                                        <img class="works__img" src="images/notebook.png" alt="Портфолио">
+                                    </picture>
+                                    <div class="name">
+                                        <p class="name__subtitle">portfolio</p>
+                                        <p class="name__title">Работы</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="square-middle">
+
+                        <div class="square-middle__block spec" data-aos="zoom-in">
+                            <a class="overlay" href="specialization.html"></a>
+                            <div class="spec__items">
+                                <svg class="spec__item">
+                                    <use xlink:href="images/sprite.svg#html"></use>
+                                </svg>
+                                <svg class="spec__item">
+                                    <use xlink:href="images/sprite.svg#css"></use>
+                                </svg>
+                                <svg class="spec__item">
+                                    <use xlink:href="images/sprite.svg#sass"></use>
+                                </svg>
+                                <svg class="spec__item">
+                                    <use xlink:href="images/sprite.svg#js"></use>
+                                </svg>
+                                <svg class="spec__item">
+                                    <use xlink:href="images/sprite.svg#jquery"></use>
+                                </svg>
+                                <svg class="spec__item">
+                                    <use xlink:href="images/sprite.svg#github"></use>
+                                </svg>
+                            </div>
+                            <div class="name">
+                                <p class="name__subtitle">specialization</p>
+                                <p class="name__title">Мои навыки</p>
+                            </div>
+                        </div>
+
+                        <div class="square-middle__block profile" data-aos="zoom-in">
+                            <a class="overlay" href="contact.html"></a>
+                            <div class="profile__items">
+                                <a class="profile__item" href="https://t.me/martynyuk21" target="_blank">
+                                    <svg class="profile__img">
+                                        <use xlink:href="images/sprite.svg#telegram"></use>
+                                    </svg>
+                                </a>
+                                <a class="profile__item"
+                                    href="https://instagram.com/e.martynyuk21?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+                                    <svg class="profile__img">
+                                        <use xlink:href="images/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="name">
+                                <p class="name__subtitle">Profiles</p>
+                                <p class="name__title">Мои контакты</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="square-bottom">
+
+                        <div class="square-bottom__item numbers" data-aos="zoom-in">
+                            <div class="numbers__item">
+                                <p class="numbers__item-num">5</p>
+                                <p class="numbers__item-descr">Месяцев <br>опыта</p>
+                            </div>
+                            <div class="numbers__item">
+                                <p class="numbers__item-num">10+</p>
+                                <p class="numbers__item-descr">Клиентов</p>
+                            </div>
+                            <div class="numbers__item">
+                                <p class="numbers__item-num">12+</p>
+                                <p class="numbers__item-descr">Проектов</p>
+                            </div>
+                        </div>
+
+                        <div class="square-bottom__item cooperation" data-aos="zoom-in">
+                            <a class="overlay" href="contact.html"></a>
+                            <p class="cooperation__title">Давайте <br> работать <span
+                                    class="cooperation__title-span">вместе.</span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer__logo">
+
+                <a class="footer__logo-link" href="index.html">
+
+                    <picture class="">
+
+                        <source srcset="images/logo.avif" type="image/avif">
+
+                        <source srcset="images/logo.webp" type="image/webp">
+
+                        <img class="footer__logo-img" src="images/logo.png" alt="Лого">
+
+                    </picture>
+
+                </a>
+
+            </div>
+
+            <ul class="footer__lists">
+
+                <li class="footer__item">
+
+                    <a class="footer__item-link" href="#">Главная</a>
+
+                </li>
+
+                <li class="footer__item">
+
+                    <a class="footer__item-link" href="portfolio.html">Работы</a>
+
+                </li>
+
+                <li class="footer__item">
+
+                    <a class="footer__item-link" href="about.html">Обо мне</a>
+
+                </li>
+
+                <li class="footer__item">
+
+                    <a class="footer__item-link" href="contact.html">Контакты</a>
+
+                </li>
+
+            </ul>
+
+            <div class="graph-modal">
+
+                <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="header">
+
+                    <button class="btn-reset graph-modal__close js-modal-close"
+
+                        aria-label="Закрыть модальное окно"></button>
+
+                    <div class="graph-modal__content">
+
+                        <div class="contact-social">
+
+                            <h3 class="contact-social__title">СОЦИАЛЬНЫЕ СЕТИ</h3>
+
+                            <div class="contact-social__items">
+
+                                <div class="contact-social__item" data-aos="zoom-in">
+
+                                    <a class="contact-social__img-link" href="https://t.me/martynyuk21" target="_blank">
+
+                                        <svg class="contact-social__img">
+
+                                            <use xlink:href="images/sprite.svg#telegram"></use>
+
+                                        </svg>
+
+                                    </a>
+
+                                </div>
+
+                                <div class="contact-social__item" data-aos="zoom-in">
+
+                                    <a class="contact-social__img-link"
+
+                                        href="https://instagram.com/e.martynyuk21?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+
+                                        <svg class="contact-social__img">
+
+                                            <use xlink:href="images/sprite.svg#instagram"></use>
+
+                                        </svg>
+
+                                    </a>
+
+                                </div>
+
+                                <div class="contact-social__item" data-aos="zoom-in">
+
+                                    <a class="contact-social__img-link" href="mailto:martynyukei21@gmail.com"
+
+                                        target="_blank">
+
+                                        <svg class="contact-social__img">
+
+                                            <use xlink:href="images/sprite.svg#mail"></use>
+
+                                        </svg>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
